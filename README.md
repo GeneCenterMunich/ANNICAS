@@ -89,24 +89,10 @@ Usage:				a) Create a source folder and a tagret folder
 				ANNICAS.exe is being executed. 
 
 
---------------------------------------------------------------------------------------------------
-
-2) Launching ANNICAS using directly the Mallab source code "ANNICAS.m"
-
-MARKUS: please enter a short description here.....
-
-
-
-
-
-
-
-
-
 
 --------------------------------------------------------------------------------------------------
 
-3) training the neuronal network yourself
+2) training the neuronal network yourself
 
 PatternDetect7.m and CategorizingPixelVals9.m read pre-trained networks that have been
 trained with our data set (see paper for details). Due to the limited amount of data, the accuracy
@@ -184,7 +170,7 @@ Requirements:			Matlab toolboxes (version 2021b or later)
 
 --------------------------------------------------------------------------------------------------
 
-4) compiling the executable from a Matlab .m file
+3) compiling the executable from a Matlab .m file
 
 You can modify the executable or compile your own ANNICAS executable. You just need to modify
 and run our CompileMyFile.m and/or the main ANNICAS.m. A Matlab license is however required.
