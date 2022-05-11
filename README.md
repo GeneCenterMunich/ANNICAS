@@ -11,6 +11,8 @@ Usage of ANNICAS:
 -----------------------------------------------------------------------------------------------------
 
 
+
+
 1) running the executable
 
 We compiled an executable (.exe) in order to provide a stand-alone software. You can 
@@ -232,32 +234,6 @@ Requirements:			Matlab toolboxes (version 2021b or later)
 				optionally our pre-trained network 
 
 				- darknet19_pretrained_3800
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
