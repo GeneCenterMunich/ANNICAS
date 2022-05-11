@@ -6,11 +6,9 @@ Usage of ANNICAS:
 
 -----------------------------------------------------------------------------------------------------
  ANNICAS: 	ANN based Image Categorization and Analysis Software
-		Version 1.0, fall 2021
+		Version 1.0, 2022
 		send requests/comments to hohle@genzentrum.lmu.de
 -----------------------------------------------------------------------------------------------------
-
-
 
 
 1) running the executable
@@ -234,6 +232,32 @@ Requirements:			Matlab toolboxes (version 2021b or later)
 				optionally our pre-trained network 
 
 				- darknet19_pretrained_3800
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
