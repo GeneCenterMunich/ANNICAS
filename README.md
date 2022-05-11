@@ -1,17 +1,15 @@
-# ANNICAS
-####################Usage of ANNICAS###################################################################
-#
-#	1) running the executable
-#	2) compiling the executable from a Matlab .m file
-#	3) training the neuronal network yourself
-#
-#-----------------------------------------------------------------------------------------------------
-# ANNICAS: 	ANN based Image Categorization and Analysis Software
-#		Version 1.0, fall 2021
-#		send requests/comments to hohle@genzentrum.lmu.de
-#-----------------------------------------------------------------------------------------------------
-#
-######################################################################################################
+Usage of ANNICAS:
+
+	1) running the executable
+	2) compiling the executable from a Matlab .m file
+	3) training the neuronal network yourself
+
+-----------------------------------------------------------------------------------------------------
+ ANNICAS: 	ANN based Image Categorization and Analysis Software
+		Version 1.0, fall 2021
+		send requests/comments to hohle@genzentrum.lmu.de
+-----------------------------------------------------------------------------------------------------
+
 
 1) running the executable
 
@@ -90,9 +88,79 @@ Usage:				a) Create a source folder and a tagret folder
 
 
 
+
 --------------------------------------------------------------------------------------------------
 
-2) training the neuronal network yourself
+2) compiling the executable from a Matlab .m file
+
+You can modify the executable or compile your own ANNICAS executable. You just need to modify
+and run our CompileMyFile.m and/or the main ANNICAS.m. A Matlab license is however required.
+Note: compiling the executable from a Matlab .m file is not neccessary, if you just want to
+use the software. However, we want you to be able to modify it, if you wish. This section
+requires some moderate Matlab programming skills.  
+
+Requirements:			Matlab toolboxes (version 2021b or later)
+
+				- Matlab
+				- API Compiler
+				- Parallel Processing
+				- Support Package for inceptionresnetv2
+
+				Our Matlab subroutines
+
+				- PatternDetect7.m
+				- ANNICAS.m
+				- CategorizingPixelVals9.m
+
+				Our pre-trained networks
+
+				- inceptionresnetv2_square_detect_637_MBS16_doubleAug_RandomCut.mat
+				(for segmentation --> finding the squares)
+
+				- input_Categorizing_PixelVals9.mat
+				(for categorization --> categorizing squares)
+
+				
+				Optional: our icon
+
+				-logo1.jpg
+	  			
+				A compiling routine; either your own or use our
+
+				CompileMyFile.m 
+
+				as a start.
+
+
+Usage:				Open Matlab and run
+				
+				CompileMyFile.m
+
+				This .m file compiles ANNICAS.m to an executable (see comments
+				in the source code).
+				When running CompileMyFile.m, the subroutines PatternDetect7.m,
+				CategorizingPixelVals9.m and ANNICAS.m need to be in the same 
+				folder, as well as the networks 
+				inceptionresnetv2_square_detect_637_MBS16_doubleAug_RandomCut.mat
+				and input_Categorizing_PixelVals9.mat and optionally the logo file
+				logo1.jpg.
+
+
+CompileMyFile.m just compiles an existing main program, here ANNICAS.m. However, ANNICAS.m itself
+determines the properties of the executable. You can create your own executable with user defined 
+properties by modifying ANNICAS.m (see comments in the source code). Note, that ANNICAS.m is very 
+basic in order to keep it simple and make it easy to understand. 
+
+ANNICAS.m calls CategorizingPixelVals9.m which categorizes the squares detected by PatternDetect7.m
+
+The segmentation itself takes place in PatternDetect7.m (see comments in the source code).
+
+
+
+
+--------------------------------------------------------------------------------------------------
+
+3) training the neuronal network yourself
 
 PatternDetect7.m and CategorizingPixelVals9.m read pre-trained networks that have been
 trained with our data set (see paper for details). Due to the limited amount of data, the accuracy
@@ -164,79 +232,6 @@ Requirements:			Matlab toolboxes (version 2021b or later)
 				optionally our pre-trained network 
 
 				- darknet19_pretrained_3800
-
-
-
-
---------------------------------------------------------------------------------------------------
-
-3) compiling the executable from a Matlab .m file
-
-You can modify the executable or compile your own ANNICAS executable. You just need to modify
-and run our CompileMyFile.m and/or the main ANNICAS.m. A Matlab license is however required.
-Note: compiling the executable from a Matlab .m file is not neccessary, if you just want to
-use the software. However, we want you to be able to modify it, if you wish. This section
-requires some moderate Matlab programming skills.  
-
-Requirements:			Matlab toolboxes (version 2021b or later)
-
-				- Matlab
-				- API Compiler
-				- Parallel Processing
-				- Support Package for inceptionresnetv2
-
-				Our Matlab subroutines
-
-				- PatternDetect7.m
-				- ANNICAS.m
-				- CategorizingPixelVals9.m
-
-				Our pre-trained networks
-
-				- inceptionresnetv2_square_detect_637_MBS16_doubleAug_RandomCut.mat
-				(for segmentation --> finding the squares)
-
-				- input_Categorizing_PixelVals9.mat
-				(for categorization --> categorizing squares)
-
-				
-				Optional: our icon
-
-				-logo1.jpg
-	  			
-				A compiling routine; either your own or use our
-
-				CompileMyFile.m 
-
-				as a start.
-
-
-Usage:				Open Matlab and run
-				
-				CompileMyFile.m
-
-				This .m file compiles ANNICAS.m to an executable (see comments
-				in the source code).
-				When running CompileMyFile.m, the subroutines PatternDetect7.m,
-				CategorizingPixelVals9.m and ANNICAS.m need to be in the same 
-				folder, as well as the networks 
-				inceptionresnetv2_square_detect_637_MBS16_doubleAug_RandomCut.mat
-				and input_Categorizing_PixelVals9.mat and optionally the logo file
-				logo1.jpg.
-
-
-CompileMyFile.m just compiles an existing main program, here ANNICAS.m. However, ANNICAS.m itself
-determines the properties of the executable. You can create your own executable with user defined 
-properties by modifying ANNICAS.m (see comments in the source code). Note, that ANNICAS.m is very 
-basic in order to keep it simple and make it easy to understand. 
-
-ANNICAS.m calls CategorizingPixelVals9.m which categorizes the squares detected by PatternDetect7.m
-
-The segmentation itself takes place in PatternDetect7.m (see comments in the source code).
-
-
-
-
 
 
 
