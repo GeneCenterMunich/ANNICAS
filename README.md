@@ -7,7 +7,7 @@ Usage of ANNICAS:
 -----------------------------------------------------------------------------------------------------
  ANNICAS: 	ANN based Image Categorization and Analysis Software
 		Version 1.0, 2022
-		send requests/comments to hohle@genzentrum.lmu.de
+		send requests/comments to markus.hohle@berkeley.edu
 -----------------------------------------------------------------------------------------------------
 
 
