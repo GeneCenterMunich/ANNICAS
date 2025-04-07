@@ -201,7 +201,7 @@ Requirements:			Matlab toolboxes (version 2021b or later)
 
 
 We publish our codes in order to make the training process more transparent for the user. Please
-send bug reports to hohle@genzentrum.lmu.de.
+send bug reports to markus.hohle@berkeley.edu
 See comments in the source code for more details. Note, that we ran learningSquaresFind2.m on
 a linux machine. Therefore, some commands like "ls" vs "dir" might differ. 
 
