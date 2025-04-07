@@ -215,7 +215,7 @@ Note that these specifications have been adapted to our internal workflow. You m
 the code significantly in order to adapted to your workflow (see section 1) and 3) in the source
 code). We optained the best performance using darknet19. 
 learningPixelVals5.m generates the input network for CategorizingPixelVals9.m.
-Please send bug reports to hohle@genzentrum.lmu.de.
+Please send bug reports to markus.hohle@berkeley.edu
 
 Requirements:			Matlab toolboxes (version 2021b or later)
 
